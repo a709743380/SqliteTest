@@ -1,0 +1,45 @@
+﻿@using WebApplication4.Services
+
+@{
+    ViewData["Title"] = "SetKey";
+}
+@inject KeyIVServices kivService;
+<h1>SetKey</h1>
+
+@{
+    var options = kivService.GetKeyIv();
+}
+<div class="text-center">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>名稱</th>
+            <th>Key</th>
+            <th>IV</th>
+            <th>操作</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <form>
+                @foreach (var item in options)
+                {
+                <tr>
+                    <th>@item.Id</th>
+                    <th>@item.Name</th>
+                    <th>@item.Key</th>
+                    <th>@item.Iv</th>
+                    <th>
+                        <button type="button" class="btn btn-primary">編輯</button>
+                        <button type="button" class="btn btn-danger">刪除</button>
+
+                    </th>
+                </tr>
+                }
+        </form>
+       
+    </tbody>
+
+</table>
+</div>

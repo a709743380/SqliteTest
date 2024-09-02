@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\WebApplication4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|c:\\users\\user\\source\\repos\\webapplication4\\webapplication4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|c:\\users\\user\\source\\repos\\webapplication4\\webapplication4\\views\\crypto\\setkeyiv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\crypto\\setkeyiv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|c:\\users\\user\\source\\repos\\webapplication4\\webapplication4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|c:\\users\\user\\source\\repos\\webapplication4\\webapplication4\\views\\home\\first_blood.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\home\\first_blood.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|c:\\users\\user\\source\\repos\\webapplication4\\webapplication4\\services\\sqlitedbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\services\\sqlitedbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|c:\\users\\user\\source\\repos\\webapplication4\\webapplication4\\controllers\\cryptocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3786DE8F-16CF-43D0-ADB2-D0B74500B3E6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\cryptocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,51 +35,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Program.cs",
-              "RelativeToolTip": "WebApplication4\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABUAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T16:34:51.878Z",
+              "Title": "SetKeyIv.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Crypto\\SetKeyIv.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Crypto\\SetKeyIv.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Crypto\\SetKeyIv.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Crypto\\SetKeyIv.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T04:53:08.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SqliteDbTest.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Services\\SqliteDbTest.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Services\\SqliteDbTest.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Services\\SqliteDbTest.cs",
-              "RelativeToolTip": "WebApplication4\\Services\\SqliteDbTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T16:44:23.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "First_Blood.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Home\\First_Blood.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Home\\First_Blood.cshtml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Home\\First_Blood.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Home\\First_Blood.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T16:26:44.394Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebApplication4\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAABoAAABIAAAA",
+              "Title": "CryptoController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\CryptoController.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\CryptoController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\CryptoController.cs",
+              "RelativeToolTip": "WebApplication4\\Controllers\\CryptoController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAqwDUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T16:20:24.352Z"
+              "WhenOpened": "2024-08-30T18:01:08.4Z",
+              "EditorCaption": ""
             }
           ]
         }

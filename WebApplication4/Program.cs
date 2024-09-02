@@ -1,3 +1,7 @@
+using WebApplication4.Interface;
+using WebApplication4.Services;
+using WebApplication4.Services.Crypto;
+
 namespace WebApplication4
 {
     public class Program
@@ -7,10 +11,17 @@ namespace WebApplication4
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.PropertyNamingPolicy = null;
+            }); ;
 
+            builder.Services.AddTransient<ICrypto, Cryptor>();
+            builder.Services.AddScoped<KeyIVServices>();
+            
             var app = builder.Build();
-
+          
+           
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
@@ -28,7 +39,7 @@ namespace WebApplication4
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}");
+                pattern: "{controller=Crypto}/{action=index}");
 
             app.Run();
         }

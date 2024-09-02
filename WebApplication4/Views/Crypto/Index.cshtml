@@ -1,0 +1,128 @@
+﻿@using WebApplication4.Services
+@{
+    ViewData["Title"] = "加解密";
+}
+@inject KeyIVServices kivService;
+@model CryptoModel
+
+@{
+    var options = kivService.SelectDdl();
+}
+<div style="text-align:center">
+    <h1>加解密</h1>
+</div>
+<div style="display:flex;justify-content:center">
+    <form asp-action="Index" method="post">
+        <div style="margin-bottom:25px">
+            <div>
+                @* @Html.TextAreaFor(x => x.DecodeContent, new { @class = "textContent", placeholder = "加密區" }) *@
+                <textarea asp-for="DecodeContent" placeholder="加密區" class="textContent"></textarea>
+            </div>
+            <div class="optionArea">
+                <div>
+                    <label class="form-label" for="title">已新增的Key IV</label>
+                    @Html.DropDownList("Title", options, new { @class = "form-control i_post", onchange = "showKeyIv(this.value)" })
+                </div>
+
+                <div class="textarea">
+                    <div>
+                        <label asp-for="Key" class="form-label"></label>
+                        <input asp-for="Key" type="text" class="form-control i_post" />
+                        <span asp-validation-for="Key" class="text-danger"></span>
+
+                    </div>
+                    <div>
+                        <label asp-for="Iv" class="form-label"></label>
+                        <input asp-for="Iv" type="text" class="form-control i_post" />
+                        <span asp-validation-for="Iv" class="text-danger"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="margin-top:15px;display:flex;justify-content: space-evenly;">
+                <button type="submit" onclick="ChangeAction('@e_OPTION.Encryp')" class="btn btn-outline-success ibutton" style="flex: 0 0 auto;">加密↓</button>
+
+                <button type="submit" onclick="ChangeAction('@e_OPTION.Decryp')" class="btn btn-outline-primary ibutton" style="flex: 0 0 auto;">解密↑</button>
+
+                <button type="submit" onclick="ChangeAction('@e_OPTION.PwdHash')" class="btn btn-outline-info ibutton" style="flex: 0 0 auto;">密碼Hash↓</button>
+            </div>
+            <input asp-for="Option" type="hidden" />
+        </div>
+        <div>
+            @Html.TextAreaFor(x => x.EncodeContent, new { @class = "textContent", placeholder = "解密區" })
+            @* <textarea asp-for="EncodeContent" placeholder="解密區" class="textContent"></textarea> *@
+        </div>
+    </form>
+
+</div>
+
+<script>
+    $(function () {
+        $('#DecodeContent').val('@Html.Raw(Model.DecodeContent)')
+        $('#EncodeContent').val('@Html.Raw(Model.EncodeContent)')
+    });
+
+    function ChangeAction(action) {
+        $('#Option').val(action);
+    }
+    function showKeyIv(e) {
+        if (e != 'undefined' && e != "") {
+            $.ajax({
+                url: '@Url.Action("KeyIv")' + "/" + e,
+                type: "GET",
+                dataType: "json",
+                success: function (response) {
+                    console.log(response)
+                    $('#Key').val(response.Key);
+                    $('#Iv').val(response.Iv);
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            })
+        }
+        else {
+            $('#Key').val('');
+            $('#Iv').val('');
+        }
+    }
+</script>
+<style>
+    .textBorder {
+        border-radius: 15px;
+    }
+
+    .i_post {
+        margin-right: 30px;
+        width: 233px;
+    }
+
+    .ibutton {
+        margin-right: 30px;
+        font-size: 1.2rem;
+    }
+
+    .textContent {
+        width: 800px;
+        height: 170px;
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+    .optionArea {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+        .optionArea .textarea {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+        }
+
+</style>
